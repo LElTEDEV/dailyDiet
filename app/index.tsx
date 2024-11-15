@@ -1,5 +1,3 @@
-import { Text, View } from "react-native";
-
 import {
   NunitoSans_400Regular,
   NunitoSans_700Bold,
@@ -8,15 +6,17 @@ import {
 
 import { ThemeProvider } from "styled-components/native";
 import defaultTheme from "@/src/themes/defaultTheme";
-import { AppRoutes } from "@/src/routes/appRoutes";
 import { Loading } from "@/src/components/Loading";
+import { Routes } from "@/src/routes";
+import { StatusBar } from "react-native";
 
 export default function App() {
   const [fonstLoaded] = useFonts({ NunitoSans_400Regular, NunitoSans_700Bold });
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      {fonstLoaded ? <AppRoutes /> : <Loading />}
+      <StatusBar barStyle="dark-content" />
+      {fonstLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }

@@ -3,7 +3,7 @@ import { AppRoutes } from "./appRoutes";
 
 export function Routes() {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <AppRoutes />
     </View>
   );

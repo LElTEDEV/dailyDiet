@@ -17,8 +17,13 @@ export default {
     "gray-700": "#FAFAFA",
     white: "#FFFFFF",
   },
+
   FONT_SIZE: {
     REGULAR: "regular",
     BOLD: "bold",
+  },
+
+  FONT_FAMILY: {
+    NUNITO: "Nunito Sans",
   },
 };
